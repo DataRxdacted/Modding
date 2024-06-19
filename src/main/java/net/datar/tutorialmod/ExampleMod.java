@@ -1,6 +1,7 @@
 package net.datar.tutorialmod;
 
 import com.mojang.logging.LogUtils;
+import net.datar.tutorialmod.Block.ModBlocks;
 import net.datar.tutorialmod.item.ModItems;
 import net.minecraft.world.item.CreativeModeTabs;
 import net.minecraftforge.api.distmarker.Dist;
@@ -31,6 +32,8 @@ public class ExampleMod
         IEventBus modEventBus = FMLJavaModLoadingContext.get().getModEventBus();
 
         ModItems.register(modEventBus);
+        ModBlocks.register(modEventBus);
+
 
         modEventBus.addListener(this::commonSetup);
 
@@ -48,6 +51,21 @@ public class ExampleMod
     private void addCreative(BuildCreativeModeTabContentsEvent event) {
         if(event.getTabKey() == CreativeModeTabs.COMBAT) {
             event.accept(ModItems.SWORD);
+            event.accept(ModItems.GOD_AXE);
+        }
+        if(event.getTabKey() == CreativeModeTabs.INGREDIENTS) {
+            event.accept(ModItems.GOD_INGOT);
+            event.accept(ModItems.GOD_ORE);
+            event.accept(ModBlocks.GOD_ORE_BLOCK);
+            event.accept(ModBlocks.GOD_ORE_DEEPSLATE);
+            event.accept(ModBlocks.GOD_ORE_NETHERITE);
+        }
+        if(event.getTabKey() == CreativeModeTabs.BUILDING_BLOCKS) {
+            event.accept(ModBlocks.GOD_BLOCK);
+        }
+        if(event.getTabKey() == CreativeModeTabs.TOOLS_AND_UTILITIES) {
+            event.accept(ModItems.GOD_AXE);
+            event.accept(ModItems.GOD_PICKAXE);
         }
     }
 

@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "key": {
+    "#": {
+      "item": "minecraft:stick"
+    },
+    "X": {
+      "item": "qxrvt:god_ingot"
+    }
+  },
+  "pattern": [
+    "XX ",
+    "X# ",
+    " # "
+  ],
+
+  "result": {
+    "item": "qxrvt:god_axe"
+  },
+  "show_notification": true
+}

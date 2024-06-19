@@ -15,6 +15,18 @@ public class ModItems {
     public static final RegistryObject<Item> SWORD = ITEMS.register("swordofgod",
             () -> new Item(new Item.Properties()));
 
+    public static final RegistryObject<Item> GOD_INGOT = ITEMS.register("god_ingot",
+            () -> new Item(new Item.Properties()));
+
+    public static final RegistryObject<Item> GOD_ORE = ITEMS.register("god_ore",
+            () -> new Item(new Item.Properties()));
+
+    public static final RegistryObject<Item> GOD_AXE = ITEMS.register("god_axe",
+            () -> new Item(new Item.Properties()));
+
+    public static final RegistryObject<Item> GOD_PICKAXE = ITEMS.register("god_pickaxe",
+            () -> new Item(new Item.Properties()));
+
     public static void register(IEventBus eventBus) {
         ITEMS.register(eventBus);
 

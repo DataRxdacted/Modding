@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:smelting",
+  "category": "misc",
+  "cookingtime": 200,
+  "experience": 0.7,
+  "group": "god_ingot",
+  "ingredient": {
+    "item": "qxrvt:god_ore_block"
+  },
+  "result": "qxrvt:god_ingot"
+}

@@ -1,3 +1,9 @@
 {
-  "item.qxrvt.swordofgod": "Sword of God"
+  "item.qxrvt.swordofgod": "Sword of God",
+  "item.qxrvt.god_ingot": "God Ingot",
+  "item.qxrvt.god_ore": "God Ore",
+  "block.qxrvt.god_ore_block": "God Ore",
+  "block.qxrvt.god_block": "God Block",
+  "item.qxrvt.god_axe": "Axe of God",
+  "item.qxrvt.god_pickaxe": "Pickaxe of God"
 }
